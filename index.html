@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="path/to/favicon.ico">
+    <title>Comic Sans History</title>
+</head>
+<body>
+
+    <div id="container"> 
+        
+        <h1>Comic Sans MS</h1>
+
+        <figure>
+            <a href="Sub.html">
+                <img src="images/connare.jpg" alt="Comic Sans Creator" id="connare">
+            </a>
+            <audio id="hoverSound">
+                <source src="sound/angel.mp3" type="audio/mp3"></audio>
+        </figure>
+
+        <p id="p1">
+            Comic Sans is a sans-serif typeface that was created by Vincent Connare and was released in 1994 by Microsoft. He created this font because comics originally used Times New Roman as their font but he perceived it as being too formal and not the aesthetic he was going for and thus Comic Sans was created to fit this aesthetic...
+        </p>
+
+          <img id="cock" src="images/cockroach.GIF">
+
+        <p id="caption1">
+            (Vincent Connare 1960-NOW)
+        </p>
+
+
+        <figure>
+            <a href="Super.html">
+                <img id="punch" src="images/batxsup.JPG" alt="Batman and Superman">
+            </a>
+        </figure>
+        
+        <p id="p2">
+            Comic Sans was not officially released after it was made because he made it too late to include it in Microsoft Bob. It was finally released when programmers of Microsoft 3D Movie Maker which coincidentally used speech bubbles and cartoon guides...
+        </p>
+
+        <p id="p3">
+            Comic Sans surprisingly got a recent update that happened in 2011, another person, Terrance Weinzier, who added different styles for the font...
+        </p>
+    </div>
+
+      <script type="text/javascript">
+        var audio = document.getElementById('hoverSound');
+
+// Play audio when hovering over the image
+document.getElementById('connare').addEventListener('mouseover', function() {
+    audio.play();
+    // Change the image source on hover
+    document.getElementById('connare').src = "images/angel.JPG"; // New image on hover
+});
+
+// Pause audio when hover ends and reset image
+document.getElementById('connare').addEventListener('mouseleave', function() {
+    audio.pause();
+    audio.currentTime = 0; // Reset audio to the start
+    // Reset the image back to original
+    document.getElementById('connare').src = "images/connare.jpg"; // Original image
+});
+
+    </script>
+
+</body>
+</html>

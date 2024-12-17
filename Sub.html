@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Comic Sans MS Hate</title>
+</head>
+<body>
+
+<div id="container"> 
+    <a href="index.html">
+        <h1>Comic Sans MS Hate</h1>
+    </a>
+
+    <figure>
+        <img id="connare2" src="images/connare.jpg" alt="Connare">
+    </figure>
+
+    <p id="p1">
+        Comic Sans is notoriously hated for its simple informal typeface. It was also hated because people used the font in unconventional places such as an AED and a stop sign.
+    </p>
+
+    <img id="fire" src="images/fire.GIF" alt="Fire GIF">
+    <img id="fire2" src="images/fire.GIF" alt="Fire GIF">
+
+    <!-- Embed the audio file with autoplay and muted -->
+    <audio id="background-music" autoplay loop muted>
+        <source src="sound/fire.mp3" type="audio/mp3">
+    </audio>
+
+</div>
+
+<script>
+    window.addEventListener('load', function() {
+        var audio = document.getElementById('background-music');
+        
+        setTimeout(function() {
+            audio.muted = false; 
+        }, 1000);
+    });
+</script>
+
+</body>
+</html>
